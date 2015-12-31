@@ -57,7 +57,7 @@
     },
     "DOMAIN_NAME": {
       "description": "Required for sending mail. Give an app name or use a custom domain.",
-      "value": "salty-everglades-7088.herokuapp.com",
+      "value": "twitter-api-challenge.herokuapp.com",
       "required": false
     },
     "RAILS_ENV": "production"
