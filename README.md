@@ -34,15 +34,15 @@ Tests were made using RSpec, Capybara and FactoryGirl. Tests for both user authe
 
 The following environment variables need to be configured in order for the application to fully work:
 
-**MANDRILL_USERNAME**: Mandrill address for sending mail (for confirmation email).
-**MANDRILL_APIKEY**: Mandrill API key for sending mail (for confirmation email).
-**TWITTER_CONSUMER_KEY**: Twitter API consumer key.
-**TWITTER_CONSUMER_SECRET**: Twitter API consumer secret.
-**TWITTER_ACCESS_TOKEN**: Twitter API access token.
-**TWITTER_ACCESS_SECRET**: Twitter API access secret.
-**ADMIN_EMAIL**: Administrator's email address for signing in.
-**ADMIN_PASSWORD**: Administrator's password for signing in.
-**DOMAIN_NAME**: Required for sending mail. Give an app name or use a custom domain (for confirmation email).
+- **MANDRILL_USERNAME**: Mandrill address for sending mail (for confirmation email).
+- **MANDRILL_APIKEY**: Mandrill API key for sending mail (for confirmation email).
+- **TWITTER_CONSUMER_KEY**: Twitter API consumer key.
+- **TWITTER_CONSUMER_SECRET**: Twitter API consumer secret.
+- **TWITTER_ACCESS_TOKEN**: Twitter API access token.
+- **TWITTER_ACCESS_SECRET**: Twitter API access secret.
+- **ADMIN_EMAIL**: Administrator's email address for signing in.
+- **ADMIN_PASSWORD**: Administrator's password for signing in.
+- **DOMAIN_NAME**: Required for sending mail. Give an app name or use a custom domain (for confirmation email).
 
 ## Deployment on Heroku
 
@@ -54,14 +54,14 @@ Use **app.json.example** as an example to deploy the app.
 
 To run tests as noted on **secrets.yml** the following environment variables need to be configured:
 
-**TWITTER_CONSUMER_KEY**: Twitter API consumer key.
-**TWITTER_CONSUMER_SECRET**: Twitter API consumer secret.
-**TWITTER_ACCESS_TOKEN**: Twitter API access token.
-**TWITTER_ACCESS_SECRET**: Twitter API access secret.
+- **TWITTER_CONSUMER_KEY**: Twitter API consumer key.
+- **TWITTER_CONSUMER_SECRET**: Twitter API consumer secret.
+- **TWITTER_ACCESS_TOKEN**: Twitter API access token.
+- **TWITTER_ACCESS_SECRET**: Twitter API access secret.
 
 To run all the tests run:
 
-$ rspec
+    $ rspec
 
 ## Versions
 
