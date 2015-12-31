@@ -1,0 +1,65 @@
+{
+  "name": "Twitter Api Challenge",
+  "description": "Twitter Api Challenge App",
+  "logo": "http://www.franchisemarketingsystems.com/wp-content/uploads/2015/10/Water_Scrooge_Logo.jpg",
+  "repository": "",
+  "keywords": [
+    "Twitter",
+    "Api",
+    "Challenge",
+    "RSpec",
+    "Bootstrap",
+    "authentication",
+    "Ruby",
+    "Rails"
+  ],
+  "scripts": {"postdeploy": "bundle exec rake db:migrate; bundle exec rake db:seed"},
+  "env": {
+    "MANDRILL_USERNAME": {
+      "description": "Your Mandrill address for sending mail.",
+      "value": "durnin83@gmail.com",
+      "required": false
+    },
+    "MANDRILL_APIKEY": {
+      "description": "Your Mandrill API key for sending mail.",
+      "value": "DxipWP64BO85nrfY_I4Yaw",
+      "required": false
+    },
+    "TWITTER_CONSUMER_KEY": {
+      "description": "Your Twitter API consumer key.",
+      "value": "3FJZi8f7Ryd0dBG47fLV6EuAy",
+      "required": false
+    },
+    "TWITTER_CONSUMER_SECRET": {
+      "description": "Your Twitter API consumer secret.",
+      "value": "9Y6CWRVKzealQPxp4iaCjsjEXsIVanjTN9AXWYy0pRW9GUyBDW",
+      "required": false
+    },
+    "TWITTER_ACCESS_TOKEN": {
+      "description": "Your Twitter API access token.",
+      "value": "4632673935-GUvIRbRL6iHYQVmkKzFGIlcVlpXb7jOlYc5FYNC",
+      "required": false
+    },
+    "TWITTER_ACCESS_SECRET": {
+      "description": "Your Twitter API access secret.",
+      "value": "oEmH94CDhVSbJZwriItcnh3OyzOXjfVAzYVgm2M4H5jmu",
+      "required": false
+    },
+    "ADMIN_EMAIL": {
+      "description": "The administrator's email address for signing in.",
+      "value": "durnin83@gmail.com",
+      "required": true
+    },
+    "ADMIN_PASSWORD": {
+      "description": "The administrator's password for signing in.",
+      "value": "admin2015",
+      "required": true
+    },
+    "DOMAIN_NAME": {
+      "description": "Required for sending mail. Give an app name or use a custom domain.",
+      "value": "myapp.herokuapp.com",
+      "required": false
+    },
+    "RAILS_ENV": "production"
+  }
+}
