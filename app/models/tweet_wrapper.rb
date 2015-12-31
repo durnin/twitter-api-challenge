@@ -26,7 +26,7 @@ class TweetWrapper
             wrapped_tweets
           end
         return tweets, []
-      rescue Twitter::Error::Unauthorized => e
+      rescue Twitter::Error::Unauthorized, Twitter::Error::NotFound => e
         errors << "Error while trying to fetch tweets for screen_name #{screen_name}: #{e.message}"
         STDERR.puts errors.last # Log the error somewhere for future analysis!
         return [], errors
