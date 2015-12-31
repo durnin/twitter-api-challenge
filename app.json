@@ -57,7 +57,7 @@
     },
     "DOMAIN_NAME": {
       "description": "Required for sending mail. Give an app name or use a custom domain.",
-      "value": "myapp.herokuapp.com",
+      "value": "salty-everglades-7088.herokuapp.com",
       "required": false
     },
     "RAILS_ENV": "production"
