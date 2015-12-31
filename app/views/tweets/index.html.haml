@@ -1,0 +1,22 @@
+.container
+  .row
+    .searchform
+      = form_tag(tweets_index_path, method: 'get', :class => 'form-horizontal', :role => 'form') do
+        .form-group
+          = label_tag :handle, 'Twitter Handle', {class: 'col-sm-5'}
+          .col-sm-7
+            = text_field_tag :handle, '', {class: 'form-control'}
+        .form-group
+          = label_tag :retweets, 'Include re-tweets?', {class: 'col-sm-5'}
+          .col-sm-7
+            = select_tag :retweets, options_for_select([ 'Yes', 'No' ], 'Yes'), {class: 'form-control'}
+        .form-group
+          = label_tag :number, 'Max number of tweets', {class: 'col-sm-5'}
+          .col-sm-7
+            = select_tag :number, options_for_select([ '5', '10', '25', '50' ], '25'), {class: 'form-control'}
+        = submit_tag 'Search Tweets', :class => 'button right'
+    .column
+      - if @handle.present?
+        %h1 Tweets for #{@handle}
+      - @tweets.each do |tweet|
+        = tweet.get_embed_html.html_safe

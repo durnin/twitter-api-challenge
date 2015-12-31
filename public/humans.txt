@@ -1,0 +1,10 @@
+/* TEAM */
+  RM's: Rodrigo Martinez
+  Site:
+  Twitter:
+  Location:
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: jQuery
+  Software: Ruby on Rails

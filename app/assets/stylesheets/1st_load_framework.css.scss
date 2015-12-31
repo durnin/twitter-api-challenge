@@ -1,0 +1,115 @@
+// import the CSS framework
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+// make all images responsive by default
+img {
+  @extend .img-responsive;
+  margin: 0 auto;
+  }
+// override for the 'Home' navigation link
+.navbar-brand {
+  font-size: inherit;
+  }
+
+.navbar-fixed-top .nav {
+  padding: 15px 0;
+}
+
+@media (max-width: 767px) {
+  .navbar-brand {
+    padding: 0;
+  }
+
+  .navbar-brand img {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+}
+
+// make views framework-neutral
+.column {
+  @extend .col-md-offset-3;
+  @extend .col-md-6;
+  @extend .text-center;
+  }
+.form {
+  @extend .col-md-6;
+  }
+.form-centered {
+  @extend .col-md-6;
+  @extend .text-center;
+  }
+.submit {
+  @extend .btn;
+  @extend .btn-primary;
+  @extend .btn-lg;
+  }
+// apply styles to HTML elements
+main {
+  @extend .container;
+  background-color: #eee;
+  padding-bottom: 80px;
+  width: 100%;
+  margin-top: 75px; // accommodate the navbar
+  }
+section {
+  @extend .row;
+  margin-top: 20px;
+  }
+
+// Styles for form views
+// using Bootstrap
+.authform {
+  padding-top: 30px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+.authform form {
+  @extend .well;
+  @extend .well-lg;
+  padding-bottom: 40px;
+}
+.authform .right {
+  float: right !important;
+}
+.authform .button {
+  @extend .btn;
+  @extend .btn-primary;
+}
+.authform fieldset {
+  @extend .well;
+}
+.searchform {
+  padding-top: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.searchform form {
+  @extend .well;
+  @extend .well-lg;
+  padding-bottom: 40px;
+  margin-right: 30px;
+}
+//.searchform .right {
+//  float: right !important;
+//}
+.searchform .button {
+  @extend .btn;
+  @extend .btn-primary;
+}
+.searchform fieldset {
+  @extend .well;
+}
+#error_explanation:not(:empty) {
+  @extend .alert;
+  @extend .alert-danger;
+}
+#error_explanation h2 {
+  font-size: 16px;
+}
+.button-xs {
+  @extend .btn;
+  @extend .btn-primary;
+  @extend .btn-xs;
+}

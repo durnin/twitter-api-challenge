@@ -1,0 +1,16 @@
+-# navigation styled for Bootstrap 3.0
+%nav.navbar.navbar-default.navbar-fixed-top{"role" => "navigation"}
+  .container
+    .navbar-header
+      %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      -#= link_to 'Home', root_path, class: 'navbar-brand' do
+      = link_to(root_path, class: 'navbar-brand') do
+        = image_tag("Water_Scrooge_Logo50.jpg", class: 'hidden-xs')
+        = image_tag("Water_Scrooge_Logo40.jpg", class: 'visible-xs')
+    .collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+        = render 'layouts/navigation_links'
