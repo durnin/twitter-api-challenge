@@ -16,7 +16,7 @@ class TweetWrapper
     else
       begin
         tweets =
-          Rails.cache.fetch([screen_name, count, include_retweets], :expires => TwitterApiChallenge::Application.config.global_cache_expiration) do
+          Rails.cache.fetch([screen_name, count, include_retweets], :expires_in => TwitterApiChallenge::Application.config.global_cache_expiration) do
             timeline_tweets = $twitter.user_timeline(screen_name, {:count => count, :include_rts => include_retweets})
             oembed_of_tweets = $twitter.oembeds(timeline_tweets, {:omit_script => true, :align => 'center', :maxwidth => '550'})
             wrapped_tweets = []
